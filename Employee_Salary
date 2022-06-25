@@ -1,0 +1,13 @@
+//Write a Program to calculate salary of an employee ,given his basic pay (entered by the user),HRA=15% of the basic pay and TA=20% of the basic pay.
+import java.util.*;
+
+class J {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the basic salary :");
+        int salary = sc.nextInt();
+        double net_salary;
+        net_salary = salary + (salary * 0.15) + (salary * 0.2);
+        System.out.println("Net salary: " + net_salary);
+    }
+}
